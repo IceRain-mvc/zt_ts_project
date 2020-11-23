@@ -12,7 +12,7 @@ after_scripts:
   - git config user.email "bingyu@gmail.com"
   - git add -A 
   - git commit -m "update documents"
-  - git push --force "http://${GH_TOKEN}@github.com/IceRain-mvc/zt_ts_project.git" "master:${GH_BRANCH}"
+  - git push --force "http://${GH_TOKEN}@github.com/IceRain-mvc/zt_ts_project.git" "master:gh-pages"
   branches:
     only:
       - master

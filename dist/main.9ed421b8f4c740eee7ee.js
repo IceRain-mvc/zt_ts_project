@@ -30199,10 +30199,16 @@ Object.defineProperty(exports, "__esModule", ({ value: true }));
 var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
 var react_dom_1 = __importDefault(__webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js"));
 var test1_1 = __importDefault(__webpack_require__(/*! @/test/test1 */ "./src/test/test1.tsx"));
+function a() {
+    console.log('abc');
+    var arr = [];
+    var arr2 = new Array(10);
+}
 function getAge(num) {
     return num + 10;
 }
-react_dom_1.default.render(react_1.default.createElement(test1_1.default, null), document.getElementById("root"));
+var dom = document.getElementById("root");
+react_dom_1.default.render(react_1.default.createElement(test1_1.default, null), dom);
 
 
 /***/ }),
@@ -30324,7 +30330,7 @@ exports.default = Test1;
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => "7136df82b8513694d4be"
+/******/ 		__webpack_require__.h = () => "9ed421b8f4c740eee7ee"
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/global */

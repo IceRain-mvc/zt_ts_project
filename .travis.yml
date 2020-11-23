@@ -3,8 +3,6 @@ node_js:
   - "11"
 install:
   - npm install 
-script:
-  - hexo g
 after_scripts:
   - cd ./public 
   - git init 
@@ -13,6 +11,4 @@ after_scripts:
   - git add -A 
   - git commit -m "update documents"
   - git push --force "http://${GH_TOKEN}@github.com/IceRain-mvc/zt_ts_project.git" "master:gh-pages"
-  branches:
-    only:
-      - master
+

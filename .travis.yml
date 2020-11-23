@@ -1,0 +1,18 @@
+language : node_js
+node_js:
+  - "11"
+install:
+  - npm install 
+script:
+  - hexo g
+after_scripts:
+  - cd ./public 
+  - git init 
+  - git config user.name "bingyu"
+  - git config user.email "bingyu@gmail.com"
+  - git add -A 
+  - git commit -m "update documents"
+  - git push --force "http://${GH_TOKEN}@${GH_REF}" "master:${GH_BRANCH}"
+  branches:
+    only:
+      - master
